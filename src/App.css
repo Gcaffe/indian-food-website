@@ -1,0 +1,14 @@
+.prueba {
+  background-color: #FF6B35;
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+}

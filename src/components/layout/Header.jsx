@@ -34,7 +34,7 @@ export default function Header() {
       <div className="hidden lg:block bg-india-dark text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+34XXXXXXXXX" className="flex items-center gap-2 hover:text-india-orange transition-colors">
+            <a href="tel:+34 663076631" className="flex items-center gap-2 hover:text-india-orange transition-colors">
               <FaPhone className="text-india-orange" />
               <span>+34 XXX XXX XXX</span>
             </a>

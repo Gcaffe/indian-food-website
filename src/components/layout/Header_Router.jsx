@@ -35,9 +35,9 @@ export default function Header() {
       <div className="hidden lg:block bg-india-dark text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+34XXXXXXXXX" className="flex items-center gap-2 hover:text-india-orange transition-colors">
+            <a href="tel:+34 663076631" className="flex items-center gap-2 hover:text-india-orange transition-colors">
               <FaPhone className="text-india-orange" />
-              <span>+34 XXX XXX XXX</span>
+              <span>+34 663 076 631</span>
             </a>
             <a href="mailto:info@saboresdelaindia.com" className="flex items-center gap-2 hover:text-india-orange transition-colors">
               <FaEnvelope className="text-india-orange" />
@@ -53,13 +53,14 @@ export default function Header() {
       {/* Barra principal de navegación */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              {/* Logo temporal - reemplazar con LogoIndia.png */}
-              <div className="w-12 h-12 bg-gradient-to-br from-india-orange to-india-turquoise rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SI</span>
-              </div>
+              {/* Logo */}
+              <img 
+                src="/SaboresIndia.png" 
+                alt="Sabores de la India Logo" 
+                className="w-16 h-16 object-contain"
+              />
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-india-dark leading-tight">
                   Sabores de la India

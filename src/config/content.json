@@ -1,0 +1,64 @@
+{
+  "home": {
+    "hero": {
+      "titulo": "Sabores de la India",
+      "subtitulo": "Cocina India Auténtica Sobre Ruedas",
+      "descripcion": "Viajamos por toda España ofreciendo en festivales, conciertos y eventos Sabores de la India adaptada al paladar europeo, muy sabrosa y nutritiva.",
+      "imagen": "/images/hero-foodtruck.jpg",
+      "textoBoton": "Ver Nuestros Servicios",
+      "linkBoton": "#servicios"
+    },
+    "servicios": [
+      {
+        "id": "foodtruck",
+        "nombre": "FoodTruck",
+        "titulo": "Street Food Móvil",
+        "descripcion": "Llevamos nuestra cocina india a festivales, conciertos y eventos por toda España. Comida fresca preparada al momento.",
+        "imagen": "/images/servicio-foodtruck.jpg",
+        "textoBoton": "Más Información",
+        "link": "/foodtruck",
+        "icono": "🚚"
+      },
+      {
+        "id": "catering",
+        "nombre": "Catering",
+        "titulo": "Catering para Eventos",
+        "descripcion": "Servicio de catering personalizado para bodas, cumpleaños, eventos corporativos y celebraciones especiales.",
+        "imagen": "/images/servicio-catering.jpg",
+        "textoBoton": "Más Información",
+        "link": "/catering",
+        "icono": "🍽️"
+      },
+      {
+        "id": "clases",
+        "nombre": "Clases de Cocina",
+        "titulo": "Aprende Cocina India",
+        "descripcion": "Clases prácticas donde aprenderás a preparar platos auténticos de la cocina india con técnicas tradicionales.",
+        "imagen": "/images/servicio-clases.jpg",
+        "textoBoton": "Más Información",
+        "link": "/clases",
+        "icono": "👨‍🍳"
+      }
+    ],
+    "sobreNosotros": {
+      "titulo": "¿Por qué elegirnos?",
+      "items": [
+        {
+          "titulo": "+20 Años de Experiencia",
+          "descripcion": "Más de dos décadas compartiendo la auténtica cocina india",
+          "icono": "⭐"
+        },
+        {
+          "titulo": "Cocina Auténtica Adaptada",
+          "descripcion": "Recetas tradicionales adaptadas al paladar europeo",
+          "icono": "🌶️"
+        },
+        {
+          "titulo": "Servicio por Toda España",
+          "descripcion": "Viajamos a cualquier punto de España para tu evento",
+          "icono": "🇪🇸"
+        }
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/servicios" element={<Services />} />
           <Route path="/galeria" element={<Gallery />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/eventos" element={<Events />} />
         </Routes>
       </Layout>
     </Router>

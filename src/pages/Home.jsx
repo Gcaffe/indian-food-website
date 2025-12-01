@@ -4,6 +4,44 @@ import contentData from '../config/content.json';
 export default function Home() {
   const { hero, servicios, sobreNosotros } = contentData.home;
 
+  // Función para encontrar el evento relevante (activo más cercano)
+  const getEventoActual = () => {
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+    
+    const eventosFuturos = contentData.eventos
+      .filter(e => e.activo && new Date(e.fechaFin + 'T23:59:59') >= hoy)
+      .sort((a, b) => new Date(a.fechaInicio) - new Date(b.fechaInicio));
+    
+    return eventosFuturos[0] || null;
+  };
+
+  // Función para determinar el título del evento
+  const getTituloEvento = (evento) => {
+    if (!evento) return null;
+    
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+    
+    // Crear fechas en zona horaria local (no UTC)
+    const inicio = new Date(evento.fechaInicio + 'T00:00:00');
+    const fin = new Date(evento.fechaFin + 'T23:59:59');
+    
+    if (hoy >= inicio && hoy <= fin) {
+      return "🎉 AHORA ESTAMOS EN...";
+    } else {
+      return "📅 PRÓXIMO EVENTO";
+    }
+  };
+
+  // Formatear fechas
+  const formatearFecha = (fecha) => {
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    return new Date(fecha + 'T00:00:00').toLocaleDateString('es-ES', options);
+  };
+
+  const eventoActual = getEventoActual();
+
   return (
     <div className="min-h-screen bg-india-cream">
       {/* Hero Section - Imagen grande con texto a la izquierda */}
@@ -31,16 +69,94 @@ export default function Home() {
 
             {/* Imagen a la derecha */}
             <div className="relative h-full min-h-[400px] lg:min-h-[600px]">
-             <img
-               src={hero.imagen}
-               alt="FoodTruck Sabores de la India"
-               className="absolute inset-0 w-full h-full object-cover"
-             />
+              <img
+                src={hero.imagen}
+                alt="FoodTruck Sabores de la India"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-india-dark via-transparent to-transparent lg:hidden"></div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Sección: Evento Actual/Próximo */}
+      {eventoActual && (
+        <section className="py-12 bg-gradient-to-r from-india-orange to-orange-600 text-white">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2">
+                {getTituloEvento(eventoActual)}
+              </h2>
+            </div>
+            
+            <div className="bg-white text-india-dark rounded-lg shadow-2xl overflow-hidden max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                {/* Información del evento */}
+                <div className="p-8">
+                  <div className="mb-4">
+                    <span className="inline-block bg-india-orange text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                      {eventoActual.ciudad}
+                    </span>
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold mb-4 text-india-dark">
+                    {eventoActual.evento}
+                  </h3>
+                  
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">📅</span>
+                      <div>
+                        <p className="text-sm text-gray-600">Fecha</p>
+                        <p className="font-semibold">
+                          {formatearFecha(eventoActual.fechaInicio)} - {formatearFecha(eventoActual.fechaFin)}
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">📍</span>
+                      <div>
+                        <p className="text-sm text-gray-600">Ubicación</p>
+                        <p className="font-semibold">{eventoActual.ubicacion}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">🕐</span>
+                      <div>
+                        <p className="text-sm text-gray-600">Horario</p>
+                        <p className="font-semibold">{eventoActual.horario}</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-gray-700 mb-6">
+                    {eventoActual.descripcion}
+                  </p>
+                  
+                  <Link
+                    to="/eventos"
+                    className="inline-block bg-india-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+                  >
+                    Ver Más Detalles
+                  </Link>
+                </div>
+                
+                {/* Imagen del evento */}
+                <div className="hidden md:block relative h-full min-h-[400px]">
+                  <img
+                    src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop"
+                    alt={eventoActual.evento}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Sección: Por qué elegirnos */}
       <section className="py-16 bg-white">

@@ -3,7 +3,7 @@
     "hero": {
       "titulo": "Sabores de la India",
       "subtitulo": "Cocina India Auténtica Sobre Ruedas",
-      "descripcion": "Viajamos por toda España ofreciendo en festivales, conciertos y eventos Sabores de la India adaptada al paladar europeo, muy sabrosa y nutritiva.",
+      "descripcion": "Viajamos por toda España ofreciendo en festivales, conciertos y eventos comida vegana casera, muy sabrosa y nutritiva.",
       "imagen": "/images/hero-foodtruck.jpg",
       "textoBoton": "Ver Nuestros Servicios",
       "linkBoton": "#servicios"
@@ -60,5 +60,67 @@
         }
       ]
     }
-  }
+  },
+  "eventos": [
+    {
+      "id": 1,
+      "ciudad": "Valencia",
+      "evento": "Festival Vegano Valencia",
+      "fechaInicio": "2025-12-15",
+      "fechaFin": "2025-12-20",
+      "ubicacion": "Jardines del Turia",
+      "horario": "12:00 - 22:00",
+      "descripcion": "Tres días de deliciosa comida vegana en el corazón de Valencia. Ven a disfrutar de auténtica cocina india y muchas otras opciones vegetarianas.",
+      "imagen": "/images/evento-valencia.jpg",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "ciudad": "Madrid",
+      "evento": "Feria Gastronómica Madrid",
+      "fechaInicio": "2026-04-20",
+      "fechaFin": "2026-04-22",
+      "ubicacion": "Parque del Retiro",
+      "horario": "11:00 - 21:00",
+      "descripcion": "La mejor comida internacional en el Retiro. No te pierdas nuestros platos especiales de comida india recién preparada.",
+      "imagen": "/images/evento-madrid.jpg",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "ciudad": "Barcelona",
+      "evento": "Primavera Sound - Food Area",
+      "fechaInicio": "2026-05-28",
+      "fechaFin": "2026-06-01",
+      "ubicacion": "Parc del Fòrum",
+      "horario": "14:00 - 03:00",
+      "descripcion": "El festival más grande de España. Estaremos en el área de comida durante los 5 días del festival con nuestro foodtruck.",
+      "imagen": "/images/evento-barcelona.jpg",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "ciudad": "Sevilla",
+      "evento": "Feria de Abril - Stand Gastronómico",
+      "fechaInicio": "2026-04-27",
+      "fechaFin": "2026-05-04",
+      "ubicacion": "Real de la Feria",
+      "horario": "13:00 - 02:00",
+      "descripcion": "Durante toda la Feria de Abril estaremos sirviendo nuestros mejores platos. Fusión única de sabores indios en Sevilla.",
+      "imagen": "/images/evento-sevilla.jpg",
+      "activo": true
+    },
+    {
+      "id": 5,
+      "ciudad": "Alicante",
+      "evento": "Festival Gastronómico Alicante",
+      "fechaInicio": "2026-02-10",
+      "fechaFin": "2026-02-12",
+      "ubicacion": "Explanada de España",
+      "horario": "12:00 - 23:00",
+      "descripcion": "Festival de cocina internacional junto al mar. Ya pasó, fue un éxito rotundo.",
+      "imagen": "/images/evento-alicante.jpg",
+      "activo": false
+    }
+  ]
 }

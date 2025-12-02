@@ -147,7 +147,7 @@ export default function Home() {
                 {/* Imagen del evento */}
                 <div className="hidden md:block relative h-full min-h-[400px]">
                   <img
-                    src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop"
+                    src={eventoActual.imagen}
                     alt={eventoActual.evento}
                     className="absolute inset-0 w-full h-full object-cover"
                   />

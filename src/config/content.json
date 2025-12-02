@@ -64,14 +64,14 @@
   "eventos": [
     {
       "id": 1,
-      "ciudad": "Valencia",
-      "evento": "Festival Vegano Valencia",
-      "fechaInicio": "2025-12-15",
-      "fechaFin": "2025-12-20",
-      "ubicacion": "Jardines del Turia",
+      "ciudad": "Irún",
+      "evento": "Be Veggie",
+      "fechaInicio": "2025-12-06",
+      "fechaFin": "2025-12-08",
+      "ubicacion": "Ficoba",
       "horario": "12:00 - 22:00",
-      "descripcion": "Tres días de deliciosa comida vegana en el corazón de Valencia. Ven a disfrutar de auténtica cocina india y muchas otras opciones vegetarianas.",
-      "imagen": "/images/evento-valencia.jpg",
+      "descripcion": "Tres días de deliciosa comida vegana en el corazón de Irún. Ven a disfrutar de auténtica cocina india y muchas otras opciones vegetarianas.",
+      "imagen": "/images/evento-irun.jpg",
       "activo": true
     },
     {

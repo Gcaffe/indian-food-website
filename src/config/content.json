@@ -215,5 +215,299 @@
       "destacado": true,
       "imagen": "/images/eventos/feria-abril.jpg"
     }
+  ],
+  "menu": {
+    "menuVegano": [
+      {
+      "id": "v1",
+      "nombre": "Samosa",
+      "categoria": "Entrantes",
+      "descripcion": "Deliciosa empanada triangular rellena de patata, guisantes y especias. Se sirve con chutney de membrillo.",
+      "precio": 4.00,
+      "imagen": "/images/menu/vegan-somosa.jpg",
+      "badges": ["vegano"],
+      "alergenos": ["gluten"],
+      "destacado": true,
+      "nota": "¡Un clásico callejero!"
+    },
+    {
+      "id": "v2",
+      "nombre": "Pakoras",
+      "categoria": "Entrantes",
+      "descripcion": "Buñuelo de lenteja roja y harina de garbanzos con cebolla, espinaca y una sorprendente mezcla de especias.",
+      "precio": 8.00,
+      "precioUnidad": 1.33,
+      "cantidad": "",
+      "imagen": "/images/menu/vegan-pakora.jpg",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": false,
+      "nota": "¡Perfectas para compartir!"
+    },
+    {
+      "id": "v3",
+      "nombre": "Arroz Biryani",
+      "categoria": "Platos Principales",
+      "descripcion": "Aromático arroz basmati preparado con verduritas al estilo tradicional con especias.",
+      "precio": 9.00,
+      "imagen": "/images/menu/vegan-biryani.avif",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": true,
+      "nota": "¡El plato más popular de la India!"
+    },
+    {
+      "id": "v4",
+      "nombre": "Tikka Masala",
+      "categoria": "Platos Principales",
+      "descripcion": "Guiso de coliflor y verduritas con crema de coco, salsa de tomate y curry Masala. Servido con arroz basmati blanco.",
+      "precio": 9.00,
+      "imagen": "/images/menu/vegan-tikkamasala.jpg",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": true,
+      "nota": "¡No querrás compartirlo!"
+    },
+    {
+      "id": "v5",
+      "nombre": "Plato Combinado Vegano",
+      "categoria": "Platos Combinados",
+      "descripcion": "Si eres de probarlo todo, este plato es para ti: Arroz biryani, tikka masala, pakora y ensalada.",
+      "precio": 15.00,
+      "imagen": "/images/menu/plato-combinado-vegano.jpg",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": true,
+      "nota": "¡Toda una fiesta de sabores para tu paladar!"
+    }
+  ],
+  "menuCompleto": [
+    {
+      "id": "c1",
+      "nombre": "Naan",
+      "categoria": "Panes",
+      "descripcion": "Pan indio tradicional horneado",
+      "precio": 4.50,
+      "imagen": "/images/menu/naan.jpg",
+      "badges": [],
+      "alergenos": ["gluten", "lacteos"],
+      "destacado": false
+    },
+    {
+      "id": "c2",
+      "nombre": "Samosa",
+      "categoria": "Entrantes",
+      "descripcion": "Empanada de harina de trigo rellena de:",
+      "variantes": [
+        "Pollo al curry",
+        "Tradicional de verduras y patata",
+        "Espinacas con queso"
+      ],
+      "precio": 3.50,
+      "imagen": "/images/menu/samosa-mixta.jpg",
+      "badges": [],
+      "alergenos": ["gluten"],
+      "destacado": false
+    },
+    {
+      "id": "c3",
+      "nombre": "Pakoras",
+      "categoria": "Entrantes",
+      "descripcion": "Croqueta crujiente de harina de garbanzo, lenteja roja, cebolla y una sorprendente mezcla de especias.",
+      "precio": 5.00,
+      "cantidad": "4 unidades",
+      "imagen": "/images/menu/pakoras.jpg",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": false
+    },
+    {
+      "id": "c4",
+      "nombre": "Arroz Biryani",
+      "categoria": "Platos Principales",
+      "descripcion": "Arroz basmati cocinado al estilo tradicional con verduras y rica mezcla de especias hindúes.",
+      "precio": 8.00,
+      "imagen": "/images/menu/biryani.jpg",
+      "badges": ["vegano"],
+      "alergenos": [],
+      "destacado": false
+    },
+    {
+      "id": "c5",
+      "nombre": "Chicken Tikka Masala",
+      "categoria": "Platos Principales",
+      "descripcion": "Dados de pollo guisados en una cremosa salsa roja especiada servidos con arroz basmati.",
+      "precio": 9.50,
+      "imagen": "/images/menu/chicken-tikka-masala.jpg",
+      "badges": ["picante-medio"],
+      "alergenos": ["lacteos"],
+      "destacado": true
+    },
+    {
+      "id": "c6",
+      "nombre": "Pollo al Curry",
+      "categoria": "Platos Principales",
+      "descripcion": "Dados de pollo guisados al estilo tradicional con curry y leche de coco.",
+      "precio": 9.50,
+      "imagen": "/images/menu/pollo-curry.jpg",
+      "badges": ["picante-medio"],
+      "alergenos": [],
+      "destacado": true
+    },
+    {
+      "id": "c7",
+      "nombre": "Tandoori Roll",
+      "categoria": "Wraps",
+      "descripcion": "Wrap de tiras de pollo adobado con tandoori masala, con lechuga, tomate, cebolla y salsa yogurt.",
+      "precio": 8.00,
+      "imagen": "/images/menu/tandoori-roll.jpg",
+      "badges": ["picante-suave"],
+      "alergenos": ["gluten", "lacteos"],
+      "destacado": false
+    },
+    {
+      "id": "c8",
+      "nombre": "Alitas Tandoori",
+      "categoria": "Pollo",
+      "descripcion": "Alitas de pollo adobadas con especias tandoori servidas con patatas fritas.",
+      "precio": 8.00,
+      "imagen": "/images/menu/alitas-tandoori.jpg",
+      "badges": ["picante-medio"],
+      "alergenos": [],
+      "destacado": false
+    },
+    {
+      "id": "c9",
+      "nombre": "Plato Combinado",
+      "categoria": "Platos Combinados",
+      "descripcion": "Para el que viene a probarlo todo: 2 pakoras, 1 samosa, arroz biryani, pollo tikka masala y pollo al curry.",
+      "precio": 18.00,
+      "imagen": "/images/menu/plato-combinado.jpg",
+      "badges": ["picante-medio"],
+      "alergenos": ["gluten", "lacteos"],
+      "destacado": true,
+      "nota": "Y para el que viene a probarlo todo..."
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "b1",
+      "nombre": "Limonada de Jengibre",
+      "nombreOriginal": "Adrak Sharbat",
+      "categoria": "Refrescos",
+      "descripcion": "Refrescante y energética limonada de jengibre, con azúcar moreno y hierbabuena.",
+      "precio": 4.00,
+      "imagen": "/images/bebidas/limonada-jengibre.jpg",
+      "badges": [],
+      "nota": "¡Tranqui, no pica!"
+    },
+    {
+      "id": "b2",
+      "nombre": "Mango Lassi",
+      "categoria": "Bebidas Tradicionales",
+      "descripcion": "Bebida de yogur con mango. En la India lo utilizan durante la comida para aliviar el picante.",
+      "precio": 3.50,
+      "imagen": "/images/bebidas/mango-lassi.jpg",
+      "badges": [],
+      "alergenos": ["lacteos"]
+    },
+    {
+      "id": "b3",
+      "nombre": "Refresco de Pétalos de Rosa",
+      "categoria": "Refrescos",
+      "descripcion": "Te sorprenderá esta bebida hecha a base de rosas, dulce y sin gas hecha a base de sirope.",
+      "precio": 3.00,
+      "imagen": "/images/bebidas/petalos-rosa.jpg",
+      "badges": [],
+      "nota": "Su consumo en India es habitual en las noches de Ramadán, en las cenas para romper el ayuno."
+    },
+    {
+      "id": "b4",
+      "nombre": "Agua de Tamarindo",
+      "categoria": "Refrescos",
+      "descripcion": "El tamarindo es un cítrico con un sabor muy suave al paladar. Rico en antioxidantes y nutrientes esenciales para tu organismo.",
+      "precio": 3.00,
+      "imagen": "/images/bebidas/tamarindo.jpg",
+      "badges": [],
+      "nota": "¡Refréscate con un vasito!"
+    },
+    {
+      "id": "b5",
+      "nombre": "Cerveza India Kingfisher",
+      "categoria": "Cervezas",
+      "descripcion": "KINGFISHER una cerveza tipo lager, suave, sabor equilibrado con notas de malta.",
+      "precio": 4.00,
+      "volumen": "330ml",
+      "imagen": "/images/bebidas/kingfisher.jpg",
+      "badges": []
+    },
+    {
+      "id": "b6",
+      "nombre": "Cerveza India Cobra",
+      "categoria": "Cervezas",
+      "descripcion": "COBRA es una cerveza premium india de baja fermentación ideal para maridar con platos indios y picantes.",
+      "precio": 3.50,
+      "volumen": "330ml",
+      "imagen": "/images/bebidas/cobra.jpg",
+      "badges": []
+    },
+    {
+      "id": "b7",
+      "nombre": "Radler",
+      "categoria": "Cervezas",
+      "descripcion": "Con limón.",
+      "precio": 3.00,
+      "volumen": "330ml",
+      "imagen": "/images/bebidas/radler.jpg",
+      "badges": []
+    },
+    {
+      "id": "b8",
+      "nombre": "Chupito Afrodisíaco de la India",
+      "categoria": "Chupitos",
+      "descripcion": "Exótica mezcla de ginebra, fruta de la pasión y un punto picantito.",
+      "precio": 2.50,
+      "imagen": "/images/bebidas/chupito.jpg",
+      "badges": []
+    },
+    {
+      "id": "b9",
+      "nombre": "Tinto de Verano",
+      "categoria": "Vinos y Refrescos",
+      "descripcion": "Con hielito.",
+      "precio": 4.00,
+      "imagen": "/images/bebidas/tinto-verano.jpg",
+      "badges": []
+    },
+    {
+      "id": "b10",
+      "nombre": "Vino Tinto o Blanco",
+      "categoria": "Vinos y Refrescos",
+      "descripcion": "Copa de vino tinto o blanco.",
+      "precio": 2.50,
+      "imagen": "/images/bebidas/vino.jpg",
+      "badges": []
+    },
+    {
+      "id": "b11",
+      "nombre": "Coca-Cola, Fanta",
+      "categoria": "Refrescos",
+      "descripcion": "Refrescos",
+      "precio": 2.50,
+      "volumen": "330ml",
+      "imagen": "/images/bebidas/refrescos.jpg",
+      "badges": []
+    },
+    {
+      "id": "b12",
+      "nombre": "Agua",
+      "categoria": "Agua",
+      "descripcion": "Agua mineral",
+      "precio": 2.00,
+      "volumen": "500ml",
+      "imagen": "/images/bebidas/agua.jpg",
+      "badges": []
+    }
   ]
+}
 }

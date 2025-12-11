@@ -7,7 +7,8 @@ import { useState, useEffect } from 'react';
 import Tabs from '../components/common/Tabs';
 import MenuItem from '../components/menu/MenuItem';
 import useProximoEvento from '../hooks/useProximoEvento';
-import menuData from '../data/menu.json';
+import contentData from '../config/content.json';
+const menuData = contentData.menu;
 
 export default function Menu() {
   // Detectar próximo evento y su tipo (ahora lee de content.json)

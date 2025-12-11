@@ -36,7 +36,7 @@ export default function MenuItem({ item }) {
   };
 
   return (
-    <Card className={item.destacado ? 'ring-2 ring-india-orange' : ''}>
+    <Card>
       {/* Imagen */}
       {item.imagen && (
         <Card.Image 

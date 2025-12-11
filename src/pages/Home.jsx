@@ -10,8 +10,11 @@ export default function Home() {
     hoy.setHours(0, 0, 0, 0);
     
     const eventosFuturos = contentData.eventos
-      .filter(e => e.activo && new Date(e.fechaFin + 'T23:59:59') >= hoy)
-      .sort((a, b) => new Date(a.fechaInicio) - new Date(b.fechaInicio));
+      .filter(e => {
+        const fechaFin = new Date((e.fechaFin || e.fechaInicio || e.fecha) + 'T23:59:59');
+        return fechaFin >= hoy;
+      })
+      .sort((a, b) => new Date(a.fechaInicio || a.fecha) - new Date(b.fechaInicio || b.fecha));
     
     return eventosFuturos[0] || null;
   };
@@ -24,8 +27,8 @@ export default function Home() {
     hoy.setHours(0, 0, 0, 0);
     
     // Crear fechas en zona horaria local (no UTC)
-    const inicio = new Date(evento.fechaInicio + 'T00:00:00');
-    const fin = new Date(evento.fechaFin + 'T23:59:59');
+    const inicio = new Date((evento.fechaInicio || evento.fecha) + 'T00:00:00');
+    const fin = new Date((evento.fechaFin || evento.fechaInicio || evento.fecha) + 'T23:59:59');
     
     if (hoy >= inicio && hoy <= fin) {
       return "🎉 AHORA ESTAMOS EN...";
@@ -94,15 +97,24 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Información del evento */}
                 <div className="p-8">
-                  <div className="mb-4">
-                    <span className="inline-block bg-india-orange text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                      {eventoActual.ciudad}
+                  <div className="mb-4 flex gap-2">
+                    <span className="inline-block bg-india-orange text-white px-4 py-2 rounded-full text-sm font-semibold">
+                      {eventoActual.ubicacion?.ciudad || eventoActual.ciudad}
                     </span>
+                    {eventoActual.tipoEvento === 'vegano' && (
+                      <span className="inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        🌱 Festival Vegano
+                      </span>
+                    )}
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-4 text-india-dark">
-                    {eventoActual.evento}
+                  <h3 className="text-2xl font-bold mb-2 text-india-dark">
+                    {eventoActual.nombre || eventoActual.evento}
                   </h3>
+                  
+                  <p className="text-sm text-india-orange font-semibold mb-4">
+                    {eventoActual.categoria}
+                  </p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-3">
@@ -110,7 +122,10 @@ export default function Home() {
                       <div>
                         <p className="text-sm text-gray-600">Fecha</p>
                         <p className="font-semibold">
-                          {formatearFecha(eventoActual.fechaInicio)} - {formatearFecha(eventoActual.fechaFin)}
+                          {formatearFecha(eventoActual.fechaInicio || eventoActual.fecha)}
+                          {eventoActual.fechaFin && eventoActual.fechaFin !== eventoActual.fechaInicio && 
+                            ` - ${formatearFecha(eventoActual.fechaFin)}`
+                          }
                         </p>
                       </div>
                     </div>
@@ -119,7 +134,14 @@ export default function Home() {
                       <span className="text-2xl">📍</span>
                       <div>
                         <p className="text-sm text-gray-600">Ubicación</p>
-                        <p className="font-semibold">{eventoActual.ubicacion}</p>
+                        <p className="font-semibold">
+                          {eventoActual.ubicacion?.lugar || eventoActual.ubicacion}
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          {eventoActual.ubicacion?.ciudad && eventoActual.ubicacion?.provincia && 
+                            `${eventoActual.ubicacion.ciudad}, ${eventoActual.ubicacion.provincia}`
+                          }
+                        </p>
                       </div>
                     </div>
                     
@@ -127,7 +149,9 @@ export default function Home() {
                       <span className="text-2xl">🕐</span>
                       <div>
                         <p className="text-sm text-gray-600">Horario</p>
-                        <p className="font-semibold">{eventoActual.horario}</p>
+                        <p className="font-semibold">
+                          {eventoActual.horaInicio || eventoActual.horario} - {eventoActual.horaFin || ''}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -136,19 +160,31 @@ export default function Home() {
                     {eventoActual.descripcion}
                   </p>
                   
-                  <Link
-                    to="/eventos"
-                    className="inline-block bg-india-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
-                  >
-                    Ver Más Detalles
-                  </Link>
+                  <div className="flex gap-3">
+                    <Link
+                      to="/eventos"
+                      className="inline-block bg-india-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+                    >
+                      Ver Más Detalles
+                    </Link>
+                    {eventoActual.web && (
+                      
+                      <a  href={eventoActual.web}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block border-2 border-india-orange text-india-orange px-6 py-3 rounded-lg font-semibold hover:bg-india-orange hover:text-white transition-colors duration-300"
+                      >
+                        Sitio Web
+                      </a>
+                    )}
+                  </div>
                 </div>
-                
+
                 {/* Imagen del evento */}
                 <div className="hidden md:block relative h-full min-h-[400px]">
                   <img
                     src={eventoActual.imagen}
-                    alt={eventoActual.evento}
+                    alt={eventoActual.nombre || eventoActual.evento}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>

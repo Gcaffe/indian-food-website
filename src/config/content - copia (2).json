@@ -1,0 +1,126 @@
+{
+  "home": {
+    "hero": {
+      "titulo": "Sabores de la India",
+      "subtitulo": "Cocina India Auténtica Sobre Ruedas",
+      "descripcion": "Viajamos por toda España ofreciendo en festivales, conciertos y eventos comida vegana casera, muy sabrosa y nutritiva.",
+      "imagen": "/images/hero-foodtruck.jpg",
+      "textoBoton": "Ver Nuestros Servicios",
+      "linkBoton": "#servicios"
+    },
+    "servicios": [
+      {
+        "id": "foodtruck",
+        "nombre": "FoodTruck",
+        "titulo": "Street Food Móvil",
+        "descripcion": "Llevamos nuestra cocina india a festivales, conciertos y eventos por toda España. Comida fresca preparada al momento.",
+        "imagen": "/images/servicio-foodtruck.jpg",
+        "textoBoton": "Más Información",
+        "link": "/foodtruck",
+        "icono": "🚚"
+      },
+      {
+        "id": "catering",
+        "nombre": "Catering",
+        "titulo": "Catering para Eventos",
+        "descripcion": "Servicio de catering personalizado para bodas, cumpleaños, eventos corporativos y celebraciones especiales.",
+        "imagen": "/images/servicio-catering.jpg",
+        "textoBoton": "Más Información",
+        "link": "/catering",
+        "icono": "🍽️"
+      },
+      {
+        "id": "clases",
+        "nombre": "Clases de Cocina",
+        "titulo": "Aprende Cocina India",
+        "descripcion": "Clases prácticas donde aprenderás a preparar platos auténticos de la cocina india con técnicas tradicionales.",
+        "imagen": "/images/servicio-clases.jpg",
+        "textoBoton": "Más Información",
+        "link": "/clases",
+        "icono": "👨‍🍳"
+      }
+    ],
+    "sobreNosotros": {
+      "titulo": "¿Por qué elegirnos?",
+      "items": [
+        {
+          "titulo": "+20 Años de Experiencia",
+          "descripcion": "Más de dos décadas compartiendo la auténtica cocina india",
+          "icono": "⭐"
+        },
+        {
+          "titulo": "Cocina Auténtica Adaptada",
+          "descripcion": "Recetas tradicionales adaptadas al paladar europeo",
+          "icono": "🌶️"
+        },
+        {
+          "titulo": "Servicio por Toda España",
+          "descripcion": "Viajamos a cualquier punto de España para tu evento",
+          "icono": "🇪🇸"
+        }
+      ]
+    }
+  },
+  "eventos": [
+    {
+      "id": 1,
+      "ciudad": "Irún",
+      "evento": "Be Veggie",
+      "fechaInicio": "2025-12-06",
+      "fechaFin": "2025-12-08",
+      "ubicacion": "Ficoba",
+      "horario": "12:00 - 22:00",
+      "descripcion": "Tres días de deliciosa comida vegana en el corazón de Irún. Ven a disfrutar de auténtica cocina india y muchas otras opciones vegetarianas.",
+      "imagen": "/images/evento-irun.jpg",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "ciudad": "Madrid",
+      "evento": "Impulsa Vitae",
+      "fechaInicio": "2026-02-06",
+      "fechaFin": "2026-02-07",
+      "ubicacion": "La Nave de Madrid",
+      "horario": "11:00 - 21:00",
+      "descripcion": "Durante dos días, La Nave de Madrid se llenará de ideas, experiencias, aprendizajes prácticos e inspiración, creando un espacio donde los profesionales del sector y el público general pueden conectar, aprender y aplicar herramientas para mejorar su salud y calidad de vida, y la de otros. Nuestra contribución es ofrecerte nuestros platos especiales de comida india recién preparada.",
+      "imagen": "/images/evento-lanave.jpg",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "ciudad": "Castellón de la Plana",
+      "evento": "Feria alternativa de Castellón",
+      "fechaInicio": "2026-03-07",
+      "fechaFin": "2026-03-15",
+      "ubicacion": "",
+      "horario": "14:00 - 03:00",
+      "descripcion": "El festival más grande de España. Estaremos en el área de comida durante los 5 días del festival con nuestro foodtruck.",
+      "imagen": "/images/evento-castellon.jpg",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "ciudad": "Barcelona",
+      "evento": "Biocultura",
+      "fechaInicio": "2026-05-07",
+      "fechaFin": "2026-05-10",
+      "ubicacion": "La Fraga d'hospitalet",
+      "horario": "13:00 - 02:00",
+      "descripcion": "Durante toda la Feria estaremos sirviendo nuestros mejores platos. Fusión única de sabores indios en Sevilla.",
+      "imagen": "/images/evento-biocultura.jpg",
+      "activo": true
+    },
+    {
+      "id": 5,
+      "ciudad": "Valencia",
+      "evento": "Festival alternativa de Valencia",
+      "fechaInicio": "2026-05-22",
+      "fechaFin": "2026-05-24",
+      "ubicacion": "",
+      "horario": "12:00 - 23:00",
+      "descripcion": "Festival de cocina internacional junto al mar. Ya pasó, fue un éxito rotundo.",
+      "imagen": "/images/evento-valencia.jpg",
+      "activo": false
+    }
+  ]
+}

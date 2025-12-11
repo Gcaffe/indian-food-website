@@ -64,63 +64,156 @@
   "eventos": [
     {
       "id": 1,
-      "ciudad": "Irún",
-      "evento": "Be Veggie",
-      "fechaInicio": "2025-12-06",
-      "fechaFin": "2025-12-08",
-      "ubicacion": "Ficoba",
-      "horario": "12:00 - 22:00",
-      "descripcion": "Tres días de deliciosa comida vegana en el corazón de Irún. Ven a disfrutar de auténtica cocina india y muchas otras opciones vegetarianas.",
-      "imagen": "/images/evento-irun.jpg",
-      "activo": true
+      "nombre": "Impulsa Vitae",
+      "tipoEvento": "vegano",
+      "categoria": "Festival Vegano",
+      "descripcion": "La feria de productos ecológicos y consumo responsable más importante de España",
+      "fechaInicio": "2026-02-06",
+      "fechaFin": "2026-02-07",
+      "horaInicio": "10:00",
+      "horaFin": "20:00",
+      "ubicacion": {
+        "lugar": "La Nave",
+        "ciudad": "Madrid",
+        "provincia": "Madrid",
+        "direccion": "C. Cifuentes, 5, Villaverde, 28021 Madrid",
+        "coordenadas": {
+          "lat": 40.34783452608137,
+          "lng": -3.696168761373566
+        }
+      },
+      "destacado": true,
+      "imagen": "/images/eventos/evento-lanave.jpg",
+      "web": "https://www.lanavemadrid.com"
     },
     {
       "id": 2,
-      "ciudad": "Madrid",
-      "evento": "Feria Gastronómica Madrid",
-      "fechaInicio": "2026-04-20",
-      "fechaFin": "2026-04-22",
-      "ubicacion": "Parque del Retiro",
-      "horario": "11:00 - 21:00",
-      "descripcion": "La mejor comida internacional en el Retiro. No te pierdas nuestros platos especiales de comida india recién preparada.",
-      "imagen": "/images/evento-madrid.jpg",
-      "activo": true
+      "nombre": "Festival de las Naciones",
+      "tipoEvento": "general",
+      "categoria": "Festival Gastronómico",
+      "descripcion": "Gran festival multicultural con gastronomía de todo el mundo",
+      "fecha": "2026-04-20",
+      "horaInicio": "12:00",
+      "horaFin": "22:00",
+      "ubicacion": {
+        "lugar": "Parque del Retiro",
+        "ciudad": "Madrid",
+        "provincia": "Madrid",
+        "direccion": "Plaza de la Independencia, 7, 28001 Madrid"
+      },
+      "destacado": true,
+      "imagen": "/images/eventos/festival-naciones.jpg"
     },
     {
       "id": 3,
-      "ciudad": "Barcelona",
-      "evento": "Primavera Sound - Food Area",
-      "fechaInicio": "2026-05-28",
-      "fechaFin": "2026-06-01",
-      "ubicacion": "Parc del Fòrum",
-      "horario": "14:00 - 03:00",
-      "descripcion": "El festival más grande de España. Estaremos en el área de comida durante los 5 días del festival con nuestro foodtruck.",
-      "imagen": "/images/evento-barcelona.jpg",
-      "activo": true
+      "nombre": "BeVegui Fest",
+      "tipoEvento": "vegano",
+      "categoria": "Festival Vegano",
+      "descripcion": "Festival vegano y de vida saludable en Valencia",
+      "fecha": "2026-05-10",
+      "horaInicio": "11:00",
+      "horaFin": "21:00",
+      "ubicacion": {
+        "lugar": "La Marina de Valencia",
+        "ciudad": "Valencia",
+        "provincia": "Valencia",
+        "direccion": "Muelle de la Aduana, s/n, 46024 Valencia"
+      },
+      "destacado": false,
+      "imagen": "/images/eventos/bevegui.jpg",
+      "web": "https://beveguifest.com"
     },
     {
       "id": 4,
-      "ciudad": "Sevilla",
-      "evento": "Feria de Abril - Stand Gastronómico",
-      "fechaInicio": "2026-04-27",
-      "fechaFin": "2026-05-04",
-      "ubicacion": "Real de la Feria",
-      "horario": "13:00 - 02:00",
-      "descripcion": "Durante toda la Feria de Abril estaremos sirviendo nuestros mejores platos. Fusión única de sabores indios en Sevilla.",
-      "imagen": "/images/evento-sevilla.jpg",
-      "activo": true
+      "nombre": "Mercado Cervantes",
+      "tipoEvento": "general",
+      "categoria": "Mercado Gastronómico",
+      "descripcion": "Mercado gastronómico semanal con foodtrucks y música en vivo",
+      "fecha": "2026-03-22",
+      "horaInicio": "12:00",
+      "horaFin": "23:00",
+      "ubicacion": {
+        "lugar": "Plaza de Cervantes",
+        "ciudad": "Alcalá de Henares",
+        "provincia": "Madrid",
+        "direccion": "Plaza de Cervantes, 28801 Alcalá de Henares"
+      },
+      "destacado": false,
+      "imagen": "/images/eventos/mercado-cervantes.jpg"
     },
     {
       "id": 5,
-      "ciudad": "Alicante",
-      "evento": "Festival Gastronómico Alicante",
-      "fechaInicio": "2026-02-10",
-      "fechaFin": "2026-02-12",
-      "ubicacion": "Explanada de España",
-      "horario": "12:00 - 23:00",
-      "descripcion": "Festival de cocina internacional junto al mar. Ya pasó, fue un éxito rotundo.",
-      "imagen": "/images/evento-alicante.jpg",
-      "activo": false
+      "nombre": "BioCultura Barcelona",
+      "tipoEvento": "vegano",
+      "categoria": "Festival Vegano",
+      "descripcion": "Feria de productos ecológicos en Barcelona",
+      "fecha": "2026-05-02",
+      "horaInicio": "10:00",
+      "horaFin": "20:00",
+      "ubicacion": {
+        "lugar": "Palau Sant Jordi",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "direccion": "Passeig Olímpic, 5-7, 08038 Barcelona"
+      },
+      "destacado": true,
+      "imagen": "/images/eventos/biocultura-barcelona.jpg",
+      "web": "https://www.biocultura.org"
+    },
+    {
+      "id": 6,
+      "nombre": "Street Food Festival",
+      "tipoEvento": "general",
+      "categoria": "Festival Gastronómico",
+      "descripcion": "El mayor festival de comida callejera de España",
+      "fecha": "2026-06-15",
+      "horaInicio": "12:00",
+      "horaFin": "00:00",
+      "ubicacion": {
+        "lugar": "Matadero Madrid",
+        "ciudad": "Madrid",
+        "provincia": "Madrid",
+        "direccion": "Plaza de Legazpi, 8, 28045 Madrid"
+      },
+      "destacado": true,
+      "imagen": "/images/eventos/street-food.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Vegandale Madrid",
+      "tipoEvento": "vegano",
+      "categoria": "Festival Vegano",
+      "descripcion": "Festival vegano internacional con música y gastronomía",
+      "fecha": "2026-07-20",
+      "horaInicio": "11:00",
+      "horaFin": "22:00",
+      "ubicacion": {
+        "lugar": "La Riviera",
+        "ciudad": "Madrid",
+        "provincia": "Madrid",
+        "direccion": "Paseo Bajo de la Virgen del Puerto, s/n, 28005 Madrid"
+      },
+      "destacado": false,
+      "imagen": "/images/eventos/vegandale.jpg",
+      "web": "https://vegandalefest.com"
+    },
+    {
+      "id": 8,
+      "nombre": "Feria de Abril",
+      "tipoEvento": "general",
+      "categoria": "Feria Tradicional",
+      "descripcion": "La feria más tradicional de Sevilla con casetas y gastronomía",
+      "fecha": "2026-04-28",
+      "horaInicio": "13:00",
+      "horaFin": "02:00",
+      "ubicacion": {
+        "lugar": "Real de la Feria",
+        "ciudad": "Sevilla",
+        "provincia": "Sevilla",
+        "direccion": "C/ Real de la Feria, 41013 Sevilla"
+      },
+      "destacado": true,
+      "imagen": "/images/eventos/feria-abril.jpg"
     }
   ]
 }

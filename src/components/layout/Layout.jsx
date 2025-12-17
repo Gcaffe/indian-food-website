@@ -3,8 +3,8 @@
  * Incluye Header arriba, Footer abajo, y el contenido en medio
  */
 
-import Header from './Header_Router';
-import Footer from './Footer_Router';
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (

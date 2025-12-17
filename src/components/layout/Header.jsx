@@ -4,11 +4,19 @@
  */
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa';
 import Button from '../common/Button';
+import contentData from '../../config/content.json';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Construir submenu de servicios desde content.json
+  const serviciosSubmenu = contentData.home.servicios.map(servicio => ({
+    name: servicio.nombre,
+    path: servicio.link
+  }));
 
   // Links de navegación
   const navLinks = [
@@ -17,11 +25,7 @@ export default function Header() {
     { 
       name: 'Servicios', 
       path: '#',
-      submenu: [
-        { name: 'Catering', path: '/catering' },
-        { name: 'Foodtruck', path: '/foodtruck' },
-        { name: 'Clases de Cocina', path: '/clases' },
-      ]
+      submenu: serviciosSubmenu
     },
     { name: 'Menú', path: '/menu' },
     { name: 'Eventos', path: '/eventos' },
@@ -34,9 +38,9 @@ export default function Header() {
       <div className="hidden lg:block bg-india-dark text-white py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+34 663076631" className="flex items-center gap-2 hover:text-india-orange transition-colors">
+            <a href="tel:+34663076631" className="flex items-center gap-2 hover:text-india-orange transition-colors">
               <FaPhone className="text-india-orange" />
-              <span>+34 XXX XXX XXX</span>
+              <span>+34 663 076 631</span>
             </a>
             <a href="mailto:info@saboresdelaindia.com" className="flex items-center gap-2 hover:text-india-orange transition-colors">
               <FaEnvelope className="text-india-orange" />
@@ -54,8 +58,8 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center gap-3">
-              {/* Aquí irá el logo real */}
+            <Link to="/" className="flex items-center gap-3">
+              {/* Logo temporal - reemplazar con LogoIndia.png */}
               <div className="w-12 h-12 bg-gradient-to-br from-india-orange to-india-turquoise rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">SI</span>
               </div>
@@ -65,31 +69,39 @@ export default function Header() {
                 </h1>
                 <p className="text-xs text-gray-600">Cocina India Auténtica</p>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Navegación Desktop */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link, index) => (
               <div key={index} className="relative group">
-                <a
-                  href={link.path}
-                  className="text-india-dark hover:text-india-orange transition-colors font-medium py-2"
-                >
-                  {link.name}
-                </a>
+                {link.submenu ? (
+                  // Link con submenu
+                  <span className="text-india-dark hover:text-india-orange transition-colors font-medium py-2 cursor-pointer">
+                    {link.name}
+                  </span>
+                ) : (
+                  // Link normal
+                  <Link
+                    to={link.path}
+                    className="text-india-dark hover:text-india-orange transition-colors font-medium py-2"
+                  >
+                    {link.name}
+                  </Link>
+                )}
                 
                 {/* Submenu (si existe) */}
                 {link.submenu && (
                   <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2">
                     {link.submenu.map((sublink, subIndex) => (
-                      <a
+                      <Link
                         key={subIndex}
-                        href={sublink.path}
+                        to={sublink.path}
                         className="block px-4 py-3 text-india-dark hover:bg-india-cream hover:text-india-orange transition-colors"
                       >
                         {sublink.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -99,9 +111,11 @@ export default function Header() {
 
           {/* Botón CTA Desktop */}
           <div className="hidden lg:block">
-            <Button size="sm" onClick={() => window.location.href = '/contacto'}>
-              Solicitar Presupuesto
-            </Button>
+            <Link to="/contacto">
+              <Button size="sm">
+                Solicitar Presupuesto
+              </Button>
+            </Link>
           </div>
 
           {/* Botón menú móvil */}
@@ -125,51 +139,51 @@ export default function Header() {
           <nav className="max-w-7xl mx-auto px-4 py-4">
             {navLinks.map((link, index) => (
               <div key={index}>
-                <a
-                  href={link.path}
-                  className="block py-3 text-india-dark hover:text-india-orange transition-colors font-medium border-b border-gray-100"
-                  onClick={() => !link.submenu && setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-                
-                {/* Submenu móvil */}
-                {link.submenu && (
-                  <div className="pl-4 bg-india-cream/30">
-                    {link.submenu.map((sublink, subIndex) => (
-                      <a
-                        key={subIndex}
-                        href={sublink.path}
-                        className="block py-2 text-sm text-india-dark hover:text-india-orange transition-colors"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        → {sublink.name}
-                      </a>
-                    ))}
-                  </div>
+                {link.submenu ? (
+                  <>
+                    <span className="block py-3 text-india-dark font-medium border-b border-gray-100">
+                      {link.name}
+                    </span>
+                    {/* Submenu móvil */}
+                    <div className="pl-4 bg-india-cream/30">
+                      {link.submenu.map((sublink, subIndex) => (
+                        <Link
+                          key={subIndex}
+                          to={sublink.path}
+                          className="block py-2 text-sm text-india-dark hover:text-india-orange transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          → {sublink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className="block py-3 text-india-dark hover:text-india-orange transition-colors font-medium border-b border-gray-100"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
                 )}
               </div>
             ))}
             
             {/* Botón CTA móvil */}
             <div className="mt-4">
-              <Button 
-                fullWidth 
-                size="md"
-                onClick={() => {
-                  window.location.href = '/contacto';
-                  setMobileMenuOpen(false);
-                }}
-              >
-                Solicitar Presupuesto
-              </Button>
+              <Link to="/contacto" onClick={() => setMobileMenuOpen(false)}>
+                <Button fullWidth size="md">
+                  Solicitar Presupuesto
+                </Button>
+              </Link>
             </div>
 
             {/* Info de contacto móvil */}
             <div className="mt-4 pt-4 border-t border-gray-200 space-y-2 text-sm">
-              <a href="tel:+34XXXXXXXXX" className="flex items-center gap-2 text-india-dark hover:text-india-orange">
+              <a href="tel:+34663076631" className="flex items-center gap-2 text-india-dark hover:text-india-orange">
                 <FaPhone className="text-india-orange" />
-                <span>+34 XXX XXX XXX</span>
+                <span>+34 663 076 631</span>
               </a>
               <a href="mailto:info@saboresdelaindia.com" className="flex items-center gap-2 text-india-dark hover:text-india-orange">
                 <FaEnvelope className="text-india-orange" />

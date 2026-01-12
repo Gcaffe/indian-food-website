@@ -53,10 +53,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[600px]">
             {/* Texto a la izquierda */}
             <div className="px-8 py-16 lg:py-24 z-10">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 font-display leading-tight">
                 {hero.titulo}
               </h1>
-              <h2 className="text-2xl lg:text-3xl text-india-orange mb-6">
+              <h2 className="text-2xl lg:text-3xl text-india-orange mb-6 font-display">
                 {hero.subtitulo}
               </h2>
               <p className="text-lg mb-8 text-gray-300 leading-relaxed">
@@ -88,7 +88,7 @@ export default function Home() {
         <section className="py-12 bg-gradient-to-r from-india-orange to-orange-600 text-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              <h2 className="text-3xl md:text-4xl font-bold mb-2 font-display">
                 {getTituloEvento(eventoActual)}
               </h2>
             </div>
@@ -197,7 +197,7 @@ export default function Home() {
       {/* Sección: Por qué elegirnos */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-india-dark mb-12">
+          <h2 className="text-4xl font-bold text-center text-india-dark mb-12 font-display">
             {sobreNosotros.titulo}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -220,7 +220,7 @@ export default function Home() {
       {/* Sección: Nuestros Servicios */}
       <section id="servicios" className="py-16 bg-india-cream">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-india-dark mb-4">
+          <h2 className="text-4xl font-bold text-center text-india-dark mb-4 font-display">
             Nuestros Servicios
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
@@ -269,7 +269,7 @@ export default function Home() {
       {/* Sección: Call to Action */}
       <section className="py-16 bg-india-orange text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 font-display">
             ¿Listo para disfrutar de auténtica cocina india?
           </h2>
           <p className="text-xl mb-8">

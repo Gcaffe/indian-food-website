@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import SobreNosotros from './pages/SobreNosotros';
 import Catering from './pages/Catering';
 import Foodtruck from './pages/Foodtruck';
-import ClasesCocina from './pages/ClasesCocina';
+{/*import ClasesCocina from './pages/ClasesCocina';*/}
 import Menu from './pages/Menu';
 import Eventos from './pages/Eventos';
 import Contacto from './pages/Contacto';
@@ -31,7 +31,7 @@ function App() {
           {/* Servicios */}
           <Route path="/catering" element={<Catering />} />
           <Route path="/foodtruck" element={<Foodtruck />} />
-          <Route path="/clases" element={<ClasesCocina />} />
+          {/* <Route path="/clases" element={<ClasesCocina />} /> */}
           
           {/* Otras páginas */}
           <Route path="/menu" element={<Menu />} />

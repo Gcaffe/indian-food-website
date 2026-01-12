@@ -59,13 +59,15 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              {/* Logo temporal - reemplazar con LogoIndia.png */}
-              <div className="w-12 h-12 bg-gradient-to-br from-india-orange to-india-turquoise rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SI</span>
-              </div>
+              {/* Logo real */}
+              <img 
+                src="/images/logo/IndiaFood_1.jpg" 
+                alt="Sabores de la India Logo"
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-india-dark leading-tight">
-                  Sabores de la India
+                <h1 className="text-xl font-bold text-india-dark leading-tight font-display">
+                  Sabores de la <span className="font-display">INDIA</span>
                 </h1>
                 <p className="text-xs text-gray-600">Cocina India Auténtica</p>
               </div>

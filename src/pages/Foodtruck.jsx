@@ -130,7 +130,7 @@ export default function Foodtruck() {
               <Badge variant="success" className="mb-4 bg-green-500">
                 🌱 Menú 100% Vegano Disponible
               </Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight font-display">
                 Foodtruck de Cocina India
               </h1>
               <p className="text-xl lg:text-2xl mb-8 text-gray-200">
@@ -161,7 +161,7 @@ export default function Foodtruck() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-india-dark mb-4">
+            <h2 className="text-4xl font-bold text-india-dark mb-4 font-display">
               ¿Por Qué Nuestro Foodtruck?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -192,7 +192,7 @@ export default function Foodtruck() {
       <section className="py-16 bg-gradient-to-b from-white to-india-cream">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-india-dark mb-4">
+            <h2 className="text-4xl font-bold text-india-dark mb-4 font-display">
               Nos Han Visto En...
             </h2>
             <p className="text-xl text-gray-600">
@@ -235,7 +235,7 @@ export default function Foodtruck() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-india-dark mb-4">
+            <h2 className="text-4xl font-bold text-india-dark mb-4 font-display">
               ¿Qué Incluye Nuestro Servicio?
             </h2>
           </div>
@@ -372,7 +372,7 @@ export default function Foodtruck() {
         <section className="py-16 bg-gradient-to-b from-india-cream to-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-india-dark mb-4">
+              <h2 className="text-4xl font-bold text-india-dark mb-4 font-display">
                 📅 Ven a Visitarnos
               </h2>
               <p className="text-xl text-gray-600">
@@ -456,7 +456,7 @@ export default function Foodtruck() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-india-dark mb-4">
+            <h2 className="text-4xl font-bold text-india-dark mb-4 font-display">
               💬 Lo Que Dicen de Nosotros
             </h2>
           </div>
@@ -491,7 +491,7 @@ export default function Foodtruck() {
       {/* Call to Action Final */}
       <section className="py-16 bg-gradient-to-r from-india-orange to-orange-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 font-display">
             ¿Quieres que Vayamos a Tu Evento?
           </h2>
           <p className="text-xl mb-4">
@@ -536,10 +536,6 @@ export default function Foodtruck() {
               También ofrecemos: 
               <Link to="/catering" className="underline hover:text-india-cream mx-2">
                 Catering para Eventos Privados
-              </Link>
-              •
-              <Link to="/clases" className="underline hover:text-india-cream mx-2">
-                Clases de Cocina India
               </Link>
             </p>
           </div>

@@ -16,11 +16,15 @@ export default function Footer() {
           {/* Columna 1: Sobre nosotros */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-india-orange to-india-turquoise rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SI</span>
-              </div>
+              <img 
+                src="/images/logo/IndiaFood_1.jpg" 
+                alt="Sabores de la India Logo"
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <div>
-                <h3 className="text-lg font-bold">Sabores de la India</h3>
+                <h3 className="text-lg font-bold font-display">
+                  Sabores de la <span className="font-display">INDIA</span>
+                </h3>
                 <p className="text-sm text-gray-400">Cocina India Auténtica</p>
               </div>
             </div>
@@ -114,11 +118,11 @@ export default function Footer() {
                   → Foodtruck para Festivales
                 </a>
               </li>
-              <li>
+             {/* <li>
                 <a href="/clases" className="text-gray-300 hover:text-india-orange transition-colors text-sm">
                   → Clases de Cocina India
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="/menu" className="text-gray-300 hover:text-india-orange transition-colors text-sm">
                   → Ver Menú Completo
@@ -139,9 +143,9 @@ export default function Footer() {
                 </div>
               </li>
               <li>
-                <a href="tel:+34XXXXXXXXX" className="flex items-center gap-3 text-gray-300 hover:text-india-orange transition-colors text-sm">
+                <a href="tel:+34 663 076 631" className="flex items-center gap-3 text-gray-300 hover:text-india-orange transition-colors text-sm">
                   <FaPhone className="text-india-orange flex-shrink-0" />
-                  <span>+34 XXX XXX XXX</span>
+                  <span>+34 663 076 631</span>
                 </a>
               </li>
               <li>

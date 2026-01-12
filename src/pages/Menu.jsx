@@ -29,7 +29,7 @@ export default function Menu() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-india-orange to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-5xl font-bold mb-4  font-display">
             🍛 Nuestro Menú 🍛
           </h1>
           <p className="text-xl mb-6">
@@ -71,7 +71,7 @@ export default function Menu() {
               <div>
                 {/* Header Vegano */}
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 mb-8 border-l-4 border-green-500">
-                  <h2 className="text-3xl font-bold text-india-dark mb-2">
+                  <h2 className="text-3xl font-bold text-india-dark mb-2 font-display">
                     🌱 Menú 100% Vegano
                   </h2>
                   <p className="text-lg text-gray-700">
@@ -100,7 +100,7 @@ export default function Menu() {
               <div>
                 {/* Header Completo */}
                 <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-6 mb-8 border-l-4 border-india-orange">
-                  <h2 className="text-3xl font-bold text-india-dark mb-2">
+                  <h2 className="text-3xl font-bold text-india-dark mb-2 font-display">
                     🍗 Menú Completo
                   </h2>
                   <p className="text-lg text-gray-700">
@@ -129,7 +129,7 @@ export default function Menu() {
               <div>
                 {/* Header Bebidas */}
                 <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-6 mb-8 border-l-4 border-india-turquoise">
-                  <h2 className="text-3xl font-bold text-india-dark mb-2">
+                  <h2 className="text-3xl font-bold text-india-dark mb-2 font-display">
                     🍹 Bebidas
                   </h2>
                   <p className="text-lg text-gray-700">
@@ -169,7 +169,7 @@ export default function Menu() {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-india-orange to-orange-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 font-display">
             ¿Listo para una explosión de sabores?
           </h2>
           <p className="text-xl mb-8">

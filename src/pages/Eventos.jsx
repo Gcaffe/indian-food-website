@@ -161,7 +161,7 @@ export default function Eventos() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-india-orange to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-5xl font-bold mb-4  font-display">
             📅 Próximos Eventos
           </h1>
           <p className="text-xl">
@@ -175,7 +175,7 @@ export default function Eventos() {
         {eventos.length > 0 ? (
           <>
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-india-dark mb-2">
+              <h2 className="text-3xl font-bold text-india-dark mb-2 font-display">
                 🎪 Eventos Próximos
               </h2>
               <p className="text-gray-600">
@@ -210,7 +210,7 @@ export default function Eventos() {
       {eventosPasados.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 pb-12">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-india-dark mb-2">
+            <h2 className="text-3xl font-bold text-india-dark mb-2 font-display">
               ✓ Eventos Anteriores
             </h2>
             <p className="text-gray-600">
@@ -229,7 +229,7 @@ export default function Eventos() {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-india-orange to-orange-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 font-display">
             ¿Quieres que vayamos a tu evento?
           </h2>
           <p className="text-xl mb-8">

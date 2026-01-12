@@ -104,7 +104,7 @@ export default function Contacto() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-india-orange to-orange-600 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">
+          <h1 className="text-5xl font-bold mb-4 font-display">
             📧 Contacto
           </h1>
           <p className="text-xl">
@@ -118,7 +118,7 @@ export default function Contacto() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Formulario de contacto */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-india-dark mb-6">
+            <h2 className="text-3xl font-bold text-india-dark mb-6 font-display">
               Envíanos un mensaje
             </h2>
             <p className="text-gray-600 mb-8">
@@ -156,7 +156,7 @@ export default function Contacto() {
                 type="tel"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="+34 XXX XXX XXX"
+                placeholder="+34 663 076 631"
               />
 
               {/* Mensaje */}
@@ -210,7 +210,7 @@ export default function Contacto() {
           <div>
             {/* Datos de contacto */}
             <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-              <h3 className="text-2xl font-bold text-india-dark mb-6">
+              <h3 className="text-2xl font-bold text-india-dark mb-6 font-display">
                 Información de contacto
               </h3>
 
@@ -239,10 +239,10 @@ export default function Contacto() {
                   <div>
                     <h4 className="font-semibold text-india-dark mb-1">Teléfono</h4>
                     <a 
-                      href="tel:+34XXXXXXXXX"
+                      href="tel:+34 663 076 631"
                       className="text-india-orange hover:underline"
                     >
-                      +34 XXX XXX XXX
+                      +34 663 076 631
                     </a>
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function Contacto() {
 
             {/* Redes sociales */}
             <div className="bg-gradient-to-r from-india-orange to-orange-600 rounded-lg shadow-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 font-display">
                 Síguenos en redes sociales
               </h3>
               <p className="mb-6">
@@ -318,7 +318,7 @@ export default function Contacto() {
 
             {/* Preguntas frecuentes */}
             <div className="bg-white rounded-lg shadow-lg p-8 mt-8">
-              <h3 className="text-2xl font-bold text-india-dark mb-4">
+              <h3 className="text-2xl font-bold text-india-dark mb-4 font-display">
                 ¿Tienes preguntas?
               </h3>
               <ul className="space-y-3 text-gray-600">
@@ -347,14 +347,14 @@ export default function Contacto() {
       {/* Call to Action */}
       <section className="bg-india-dark text-white py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 font-display">
             ¿Prefieres llamarnos directamente?
           </h2>
           <p className="text-xl mb-8 text-gray-300">
             Estamos disponibles de lunes a viernes de 9:00 a 20:00
           </p>
           <a
-            href="tel:+34XXXXXXXXX"
+            href="tel:+34 663 076 631"
             className="inline-block bg-india-orange text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             📱 Llamar ahora

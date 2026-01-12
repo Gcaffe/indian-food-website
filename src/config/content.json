@@ -28,16 +28,6 @@
         "textoBoton": "Más Información",
         "link": "/catering",
         "icono": "🍽️"
-      },
-      {
-        "id": "clases",
-        "nombre": "Clases de Cocina",
-        "titulo": "Aprende Cocina India",
-        "descripcion": "Clases prácticas donde aprenderás a preparar platos auténticos de la cocina india con técnicas tradicionales.",
-        "imagen": "/images/servicio-clases.jpg",
-        "textoBoton": "Más Información",
-        "link": "/clases",
-        "icono": "👨‍🍳"
       }
     ],
     "sobreNosotros": {

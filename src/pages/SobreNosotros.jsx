@@ -197,7 +197,7 @@ export default function SobreNosotros() {
             <Link to="/contacto">
               <Button 
                 size="lg"
-                className="bg-white text-india-orange hover:bg-gray-100 font-semibold"
+                className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-dark active:scale-95 transition-all duration-200"
               >
                 Solicitar Presupuesto
               </Button>
@@ -205,8 +205,7 @@ export default function SobreNosotros() {
             <Link to="/eventos">
               <Button 
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-india-orange"
+                className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-dark active:scale-95 transition-all duration-200"
               >
                 Ver Próximos Eventos
               </Button>

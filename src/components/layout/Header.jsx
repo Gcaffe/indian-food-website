@@ -114,7 +114,10 @@ export default function Header() {
           {/* Botón CTA Desktop */}
           <div className="hidden lg:block">
             <Link to="/contacto">
-              <Button size="sm">
+              <Button 
+                size="sm"
+                className="border-2 border-india-orange !text-india-orange bg-transparent hover:bg-india-orange hover:!text-white active:scale-95 transition-all duration-200"
+              >
                 Solicitar Presupuesto
               </Button>
             </Link>

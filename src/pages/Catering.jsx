@@ -198,15 +198,17 @@ export default function Catering() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contacto">
-                  <Button size="lg" className="bg-india-gold text-india-dark hover:bg-yellow-400 font-semibold">
+                  <Button 
+                    size="lg" 
+                    className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-dark active:scale-95 transition-all duration-200"
+                  >
                     Solicitar Presupuesto
                   </Button>
                 </Link>
                 <Link to="/menu">
                   <Button 
                     size="lg" 
-                    variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-india-dark"
+                    className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-dark active:scale-95 transition-all duration-200"
                   >
                     Ver Menú Base
                   </Button>
@@ -557,7 +559,7 @@ export default function Catering() {
             <Link to="/contacto">
               <Button 
                 size="lg"
-                className="bg-india-gold text-india-dark hover:bg-yellow-400 font-semibold"
+                className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-orange active:scale-95 transition-all duration-200"
               >
                 📧 Solicitar Presupuesto
               </Button>
@@ -565,8 +567,7 @@ export default function Catering() {
             <a href="tel:+34663076631">
               <Button 
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-india-dark"
+                className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-orange active:scale-95 transition-all duration-200"
               >
                 📱 Llamar Ahora
               </Button>
@@ -574,8 +575,7 @@ export default function Catering() {
             <a href="https://wa.me/34663076631" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-india-dark"
+                className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-india-orange active:scale-95 transition-all duration-200"
               >
                 💬 WhatsApp
               </Button>

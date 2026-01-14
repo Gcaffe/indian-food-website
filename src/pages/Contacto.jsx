@@ -189,6 +189,7 @@ export default function Contacto() {
                 size="lg"
                 fullWidth
                 disabled={formStatus.loading}
+                className="active:scale-95 transition-all duration-200"
               >
                 {formStatus.loading ? (
                   <span className="flex items-center justify-center gap-2">

@@ -46,36 +46,30 @@ export default function SobreNosotros() {
           {/* Introducción */}
           <div className="mb-10">
             <h2 className="text-3xl font-bold text-india-dark mb-6 font-display">
-              Nuestra Historia
+              Introducción: Pasión en cada Kilómetro
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                <strong className="text-india-orange">Sabores de la India</strong> nació hace más de dos décadas 
-                con una misión clara: compartir la riqueza y autenticidad de la cocina india con el público español. 
-                Lo que comenzó como un pequeño proyecto familiar, se ha convertido en una referencia de la gastronomía 
-                india móvil en toda España.
-              </p>
-              
-              <p>
-                Nuestra historia está marcada por la pasión por las especias, el respeto por las recetas tradicionales 
-                y la constante búsqueda de la excelencia en cada plato que preparamos. A lo largo de estos años, 
-                hemos tenido el privilegio de participar en centenares de festivales, ferias gastronómicas y eventos 
-                privados, llevando los sabores auténticos de la India a miles de personas.
+                Soy <strong className="text-india-orange">Claudia Cafferata</strong>, y mi vida se resume en dos grandes pasiones: 
+                cocinar y descubrir el mundo. Entiendo la cocina no solo como el arte de mezclar especias, sino como un puente que 
+                une culturas y personas. Tras más de 20 años dedicada a la gastronomía, mi misión hoy es llevar los sabores más 
+                auténticos de la India a cada rincón de España.
               </p>
             </div>
           </div>
 
-          {/* Filosofía */}
+          {/* Mi Trayectoria */}
           <div className="mb-10 border-t border-gray-200 pt-10">
             <h2 className="text-3xl font-bold text-india-dark mb-6 font-display">
-              Nuestra Filosofía
+              Mi Trayectoria: De Inka Taky a la Libertad del Foodtruck
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                En <strong className="text-india-orange">Sabores de la India</strong>, creemos firmemente que 
-                la cocina es un puente cultural. Por eso, mantenemos la autenticidad de las recetas tradicionales 
-                indias, pero las adaptamos sutilmente al paladar europeo para crear una experiencia gastronómica 
-                que sea a la vez auténtica y accesible.
+                Mi camino comenzó hace dos décadas como dueña del restaurante <strong className="text-india-orange">Inka Taky</strong>.
+                Fue una etapa de aprendizaje y éxito, pero un viaje a la India lo cambió todo. Al volver, sentí la necesidad de transformar mi concepto culinario: quería una cocina más dinámica, cercana y sin paredes.
+              </p>
+              <p>  
+                Así nació mi proyecto actual en formato foodtruck. Decidí cerrar las puertas del restaurante para abrir las ventanas de mi cocina itinerante, permitiéndome llegar a diferentes ciudades y compartir mi sazón con gente diversa en festivales, eventos y plazas.
               </p>
               
               <p>
@@ -86,14 +80,44 @@ export default function SobreNosotros() {
             </div>
           </div>
 
-          {/* Experiencia */}
+          {/* Mi Propuesta */}
+          <div className="mb-10 border-t border-gray-200 pt-10">
+            <h2 className="text-3xl font-bold text-india-dark mb-6 font-display">
+              Mi Propuesta: India Auténtica para Todos los Paladares
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
+              <p>
+                ¿Qué encontrarás en mi cocina? <strong>Autenticidad con un toque personal. </strong>
+                Preparo recetas tradicionales de la India, pero con matices que las hacen amigables para toda la familia.
+              </p>
+              <p>  
+                <strong>Para los valientes: </strong>
+                Mantengo esa esencia picante y vibrante que los amantes de la India buscan.
+              </p>
+              <p>  
+                <strong>Para los pequeños y los nuevos exploradores: </strong>
+                Adapto mis platos para que sean suaves y deliciosos, asegurando que nadie se quede sin probar esta cultura gastronómica tan rica.
+              </p>
+              <p>
+                <strong>¿Por qué mi cocina?</strong>
+              </p>
+              <p>
+                Porque cada plato cuenta una historia de mis viajes y porque creo que la buena comida sabe mejor cuando se comparte al aire libre, con alegría y en buena compañía.
+              </p>
+              <p>
+                <strong className="text-india-orange">¡Espero encontrarte pronto en alguna parada del camino para compartir juntos un pedazo de la India!</strong>.         
+              </p>
+            </div>
+          </div>
+
+
           <div className="mb-10 border-t border-gray-200 pt-10">
             <h2 className="text-3xl font-bold text-india-dark mb-6 font-display">
               Más de 20 Años de Experiencia
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="bg-india-cream p-6 rounded-lg">
-                <div className="text-4xl font-bold text-india-orange mb-2">500+</div>
+                <div className="text-4xl font-bold text-india-orange mb-2">100+</div>
                 <p className="text-gray-700 font-semibold">Eventos realizados</p>
               </div>
               <div className="bg-india-cream p-6 rounded-lg">

@@ -135,7 +135,7 @@ export default function Home() {
                       <div>
                         <p className="text-sm text-gray-600">Ubicación</p>
                         <p className="font-semibold">
-                          {eventoActual.ubicacion?.lugar || eventoActual.ubicacion}
+                          {eventoActual.ubicacion?.lugar || eventoActual.ubicacion?.ciudad}
                         </p>
                         <p className="text-sm text-gray-600">
                           {eventoActual.ubicacion?.ciudad && eventoActual.ubicacion?.provincia && 

@@ -79,7 +79,7 @@
       "categoria": "Vegano o Gastronómico",
       "descripcion": "XXXI Encuentro altenativo, de Sevilla Mercado Artesano",
       "fechaInicio": "2026-04-10",
-      "fechafin": "2026-04-12",
+      "fechaFin": "2026-04-12",
       "horaInicio": "10:00",
       "horaFin": "23:30",
       "ubicacion": {
@@ -98,7 +98,7 @@
       "categoria": "Festival Vegano",
       "descripcion": "Encuentro de productos kilometro 0",
       "fechaInicio": "2026-04-17",
-      "fechafin": "2026-04-19",
+      "fechaFin": "2026-04-19",
       "horaInicio": "10:00",
       "horaFin": "23:30",
       "ubicacion": {
@@ -118,7 +118,7 @@
       "categoria": "Vegano o Gastronómico",
       "descripcion": "Feria de productos ecológicos y consumo responsable",
       "fechaInicio": "2026-05-07",
-      "fechafin": "2026-05-10",
+      "fechaFin": "2026-05-10",
       "horaInicio": "10:00",
       "horaFin": "23:30",
       "ubicacion": {
@@ -137,7 +137,7 @@
       "categoria": "Vegano o Gastronómico",
       "descripcion": "Encuentro de consumo responsable, ecológico y vegetariano. Charlas, musica, gastronomía y mas.",
       "fechaInicio": "2026-05-22",
-      "fechafin": "2026-05-24",
+      "fechaFin": "2026-05-24",
       "horaInicio": "10:00",
       "horaFin": "23:30",
       "ubicacion": {

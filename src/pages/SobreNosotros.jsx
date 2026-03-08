@@ -91,11 +91,11 @@ export default function SobreNosotros() {
                 Preparo recetas tradicionales de la India, pero con matices que las hacen amigables para toda la familia.
               </p>
               <p>  
-                <strong>Para los valientes: </strong>
+                <strong>▪  Para los valientes: </strong>
                 Mantengo esa esencia picante y vibrante que los amantes de la India buscan.
               </p>
               <p>  
-                <strong>Para los pequeños y los nuevos exploradores: </strong>
+                <strong>▪  Para los pequeños y los nuevos exploradores: </strong>
                 Adapto mis platos para que sean suaves y deliciosos, asegurando que nadie se quede sin probar esta cultura gastronómica tan rica.
               </p>
               <p>

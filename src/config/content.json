@@ -54,157 +54,103 @@
   "eventos": [
     {
       "id": 1,
-      "nombre": "Impulsa Vitae",
-      "tipoEvento": "vegano",
-      "categoria": "Festival Vegano",
-      "descripcion": "La feria de productos ecológicos y consumo responsable más importante de España",
-      "fechaInicio": "2026-02-06",
-      "fechaFin": "2026-02-07",
+      "nombre": "Feria alternativa de Castellón",
+      "tipoEvento": "general",
+      "categoria": "Fiestas de la magdalena",
+      "descripcion": "Feria alternativa en las fiestas de la magdalena",
+      "fechaInicio": "2026-03-07",
+      "fechaFin": "2026-03-15",
       "horaInicio": "10:00",
       "horaFin": "20:00",
       "ubicacion": {
-        "lugar": "La Nave",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "direccion": "C. Cifuentes, 5, Villaverde, 28021 Madrid",
-        "coordenadas": {
-          "lat": 40.34783452608137,
-          "lng": -3.696168761373566
-        }
+        "lugar": "",
+        "ciudad": "Castellón",
+        "provincia": "Alicante",
+        "direccion": "Calle del Bisbe Salinas,113 CP: 12003"
       },
       "destacado": true,
-      "imagen": "/images/eventos/evento-lanave.jpg",
-      "web": "https://www.lanavemadrid.com"
+      "imagen": "",
+      "web": ""
     },
     {
       "id": 2,
-      "nombre": "Festival de las Naciones",
-      "tipoEvento": "general",
-      "categoria": "Festival Gastronómico",
-      "descripcion": "Gran festival multicultural con gastronomía de todo el mundo",
-      "fecha": "2026-04-20",
-      "horaInicio": "12:00",
-      "horaFin": "22:00",
+      "nombre": "Feria alternativa de Sevilla",
+      "tipoEvento": "vegano",
+      "categoria": "Vegano o Gastronómico",
+      "descripcion": "XXXI Encuentro altenativo, de Sevilla Mercado Artesano",
+      "fechaInicio": "2026-04-10",
+      "fechafin": "2026-04-12",
+      "horaInicio": "10:00",
+      "horaFin": "23:30",
       "ubicacion": {
-        "lugar": "Parque del Retiro",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "direccion": "Plaza de la Independencia, 7, 28001 Madrid"
+        "lugar": "Parque del Alamillo",
+        "ciudad": "Sevilla",
+        "provincia": "Sevilla",
+        "direccion": ""
       },
       "destacado": true,
-      "imagen": "/images/eventos/festival-naciones.jpg"
+      "imagen": ""
     },
     {
       "id": 3,
-      "nombre": "BeVegui Fest",
-      "tipoEvento": "vegano",
+      "nombre": "Feria alternativa de Sevilla",
+      "tipoEvento": "vegano ecológico",
       "categoria": "Festival Vegano",
-      "descripcion": "Festival vegano y de vida saludable en Valencia",
-      "fecha": "2026-05-10",
-      "horaInicio": "11:00",
-      "horaFin": "21:00",
+      "descripcion": "Encuentro de productos kilometro 0",
+      "fechaInicio": "2026-04-17",
+      "fechafin": "2026-04-19",
+      "horaInicio": "10:00",
+      "horaFin": "23:30",
       "ubicacion": {
-        "lugar": "La Marina de Valencia",
-        "ciudad": "Valencia",
-        "provincia": "Valencia",
-        "direccion": "Muelle de la Aduana, s/n, 46024 Valencia"
+        "lugar": "Parque del Alamillo",
+        "ciudad": "Sevilla",
+        "provincia": "Sevilla",
+        "direccion": "Parque del Alamillo"
       },
-      "destacado": false,
-      "imagen": "/images/eventos/bevegui.jpg",
-      "web": "https://beveguifest.com"
+      "destacado": true,
+      "imagen": "",
+      "web": ""
     },
     {
       "id": 4,
-      "nombre": "Mercado Cervantes",
-      "tipoEvento": "general",
-      "categoria": "Mercado Gastronómico",
-      "descripcion": "Mercado gastronómico semanal con foodtrucks y música en vivo",
-      "fecha": "2026-03-22",
-      "horaInicio": "12:00",
-      "horaFin": "23:00",
+      "nombre": "Biocultura",
+      "tipoEvento": "Vegano ecológico",
+      "categoria": "Vegano o Gastronómico",
+      "descripcion": "Feria de productos ecológicos y consumo responsable",
+      "fechaInicio": "2026-05-07",
+      "fechafin": "2026-05-10",
+      "horaInicio": "10:00",
+      "horaFin": "23:30",
       "ubicacion": {
-        "lugar": "Plaza de Cervantes",
-        "ciudad": "Alcalá de Henares",
-        "provincia": "Madrid",
-        "direccion": "Plaza de Cervantes, 28801 Alcalá de Henares"
+        "lugar": "La Farga d'hospitalet",
+        "ciudad": "Barcelona",
+        "provincia": "Barcelona",
+        "direccion": ""
       },
-      "destacado": false,
-      "imagen": "/images/eventos/mercado-cervantes.jpg"
+      "destacado": true,
+      "imagen": ""
     },
     {
       "id": 5,
-      "nombre": "BioCultura Barcelona",
-      "tipoEvento": "vegano",
-      "categoria": "Festival Vegano",
-      "descripcion": "Feria de productos ecológicos en Barcelona",
-      "fecha": "2026-05-02",
+      "nombre": "Feria alternativa de Valencia",
+      "tipoEvento": "vegano ecológico",
+      "categoria": "Vegano o Gastronómico",
+      "descripcion": "Encuentro de consumo responsable, ecológico y vegetariano. Charlas, musica, gastronomía y mas.",
+      "fechaInicio": "2026-05-22",
+      "fechafin": "2026-05-24",
       "horaInicio": "10:00",
-      "horaFin": "20:00",
+      "horaFin": "23:30",
       "ubicacion": {
-        "lugar": "Palau Sant Jordi",
-        "ciudad": "Barcelona",
-        "provincia": "Barcelona",
-        "direccion": "Passeig Olímpic, 5-7, 08038 Barcelona"
+        "lugar": "Poligono de la Ciutadella",
+        "ciudad": "Valencia",
+        "provincia": "Valencia",
+        "direccion": "Poligono de la Ciutadella, 16, L'Eixample, 46004 Valencia"
       },
       "destacado": true,
-      "imagen": "/images/eventos/biocultura-barcelona.jpg",
-      "web": "https://www.biocultura.org"
-    },
-    {
-      "id": 6,
-      "nombre": "Street Food Festival",
-      "tipoEvento": "general",
-      "categoria": "Festival Gastronómico",
-      "descripcion": "El mayor festival de comida callejera de España",
-      "fecha": "2026-06-15",
-      "horaInicio": "12:00",
-      "horaFin": "00:00",
-      "ubicacion": {
-        "lugar": "Matadero Madrid",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "direccion": "Plaza de Legazpi, 8, 28045 Madrid"
-      },
-      "destacado": true,
-      "imagen": "/images/eventos/street-food.jpg"
-    },
-    {
-      "id": 7,
-      "nombre": "Vegandale Madrid",
-      "tipoEvento": "vegano",
-      "categoria": "Festival Vegano",
-      "descripcion": "Festival vegano internacional con música y gastronomía",
-      "fecha": "2026-07-20",
-      "horaInicio": "11:00",
-      "horaFin": "22:00",
-      "ubicacion": {
-        "lugar": "La Riviera",
-        "ciudad": "Madrid",
-        "provincia": "Madrid",
-        "direccion": "Paseo Bajo de la Virgen del Puerto, s/n, 28005 Madrid"
-      },
-      "destacado": false,
-      "imagen": "/images/eventos/vegandale.jpg",
-      "web": "https://vegandalefest.com"
-    },
-    {
-      "id": 8,
-      "nombre": "Feria de Abril",
-      "tipoEvento": "general",
-      "categoria": "Feria Tradicional",
-      "descripcion": "La feria más tradicional de Sevilla con casetas y gastronomía",
-      "fecha": "2026-04-28",
-      "horaInicio": "13:00",
-      "horaFin": "02:00",
-      "ubicacion": {
-        "lugar": "Real de la Feria",
-        "ciudad": "Sevilla",
-        "provincia": "Sevilla",
-        "direccion": "C/ Real de la Feria, 41013 Sevilla"
-      },
-      "destacado": true,
-      "imagen": "/images/eventos/feria-abril.jpg"
+      "imagen": "",
+      "web": ""
     }
+
   ],
   "menu": {
     "menuVegano": [

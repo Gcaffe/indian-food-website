@@ -17,7 +17,7 @@ export default function Eventos() {
     hoy.setHours(0, 0, 0, 0);
 
     // Obtener eventos desde content.json
-    const eventosData = contentData.eventos || [];
+    const eventosData = (contentData.eventos || []).filter(e => e.visible !== false);
 
     // Separar eventos futuros y pasados
     const futuros = eventosData.filter(evento => {
@@ -72,7 +72,7 @@ export default function Eventos() {
         <Card.Image 
           src={evento.imagen} 
           alt={evento.nombre}
-          height="h-56"
+          height="h-72"
         />
       )}
       

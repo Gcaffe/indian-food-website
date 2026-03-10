@@ -19,7 +19,7 @@ export default function useProximoEvento() {
       hoy.setHours(0, 0, 0, 0); // Resetear horas para comparar solo fechas
 
       // Obtener eventos desde content.json
-      const eventosData = contentData.eventos || [];
+      const eventosData = (contentData.eventos || []).filter(e => e.visible !== false);
 
       // Filtrar eventos futuros o de hoy
       const eventosFuturos = eventosData.filter(evento => {

@@ -63,14 +63,18 @@
       "horaInicio": "10:00",
       "horaFin": "20:00",
       "ubicacion": {
-        "lugar": "",
-        "ciudad": "Castellón",
-        "provincia": "Alicante",
-        "direccion": "Calle del Bisbe Salinas,113 CP: 12003"
+        "lugar": "C/ Obispo Salinas, 113",
+        "ciudad": "Castellón de la Plana",
+        "provincia": "Castellón",
+        "direccion": "Calle del Bisbe Salinas,113 CP: 12003",
+        "coordenadas": {
+          "lat": 39.9833133172646,
+          "lng": -0.02626345582076081
+        }
       },
       "destacado": true,
-      "imagen": "",
-      "web": ""
+      "imagen": "/images/eventos/cartel-castellon.jpg",
+      "web": "https://demercadosmedievales.es/mercado-artesanal/feria-alternativa-fiestas-de-la-magdalena-de-castellon-7-al-15-de-marzo-2026/"
     },
     {
       "id": 2,
@@ -125,10 +129,11 @@
         "lugar": "La Farga d'hospitalet",
         "ciudad": "Barcelona",
         "provincia": "Barcelona",
-        "direccion": ""
+        "direccion": "La Farga de L'Hospitalet"
       },
       "destacado": true,
-      "imagen": ""
+      "imagen": "/images/eventos/biocultura_BCN.jpg",
+      "web": "https://www.biocultura.org/barcelona/informacion"
     },
     {
       "id": 5,
@@ -149,7 +154,60 @@
       "destacado": true,
       "imagen": "",
       "web": ""
-    }
+    },
+  {
+    "id": 6,
+    "nombre": "Bioterra",
+    "tipoEvento": "vegano",
+    "categoria": "Festival Vegano o Gastronómico",
+    "descripcion": "Feria de productos ecológicos y consumo responsable",
+    "confirmado": false,
+    "fecha": "2026-06-06",
+    "fechaInicio": "2026-06-06",
+    "fechaFin": "2026-06-08",
+    "horaInicio": "10:00",
+    "horaFin": "23:30",
+    "ubicacion": {
+      "lugar": "FICOBA",
+      "ciudad": "Irún",
+      "provincia": "Guipúzcoa",
+      "direccion": "Avenida Iparralde 43, 20302 Irún",
+      "coordenadas": {
+        "lat": null,
+        "lng": null
+      }
+    },
+    "destacado": false,
+    "imagen": "/images/eventos/BIOTERRA.jpg",
+    "web": "https://www.ficoba.org/es/evento/bioterra-2026/"
+  },
+  {
+    "id": 7,
+    "visible": false,
+    "nombre": "Festival de las Naciones",
+    "tipoEvento": "Vegano y General",
+    "categoria": "Festival Vegano y  Gastronómico",
+    "descripcion": "null",
+    "confirmado": false,
+    "fecha": null,
+    "fechaInicio": null,
+    "fechaFin": null,
+    "horaInicio": null,
+    "horaFin": null,
+    "ubicacion": {
+      "lugar": "",
+      "ciudad": "Vitoria-Gasteiz",
+      "provincia": "Álava",
+      "direccion": "",
+      "coordenadas": {
+        "lat": null,
+        "lng": null
+      }
+    },
+    "destacado": false,
+    "imagen": "/images/eventos/null",
+    "web": ""
+  }          
 
   ],
   "menu": {

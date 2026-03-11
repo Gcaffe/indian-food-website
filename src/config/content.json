@@ -61,7 +61,7 @@
       "fechaInicio": "2026-03-07",
       "fechaFin": "2026-03-15",
       "horaInicio": "10:00",
-      "horaFin": "20:00",
+      "horaFin": "23:00",
       "ubicacion": {
         "lugar": "C/ Obispo Salinas, 113",
         "ciudad": "Castellón de la Plana",
@@ -72,15 +72,15 @@
           "lng": -0.02626345582076081
         }
       },
-      "destacado": true,
+      "destacado": false,
       "imagen": "/images/eventos/cartel-castellon.jpg",
       "web": "https://demercadosmedievales.es/mercado-artesanal/feria-alternativa-fiestas-de-la-magdalena-de-castellon-7-al-15-de-marzo-2026/"
     },
     {
       "id": 2,
       "nombre": "Feria alternativa de Sevilla",
-      "tipoEvento": "vegano",
-      "categoria": "Vegano o Gastronómico",
+      "tipoEvento": "vegano ecológico",
+      "categoria": "Festival Vegetariano Ecológico",
       "descripcion": "XXXI Encuentro altenativo, de Sevilla Mercado Artesano",
       "fechaInicio": "2026-04-10",
       "fechaFin": "2026-04-12",
@@ -92,14 +92,15 @@
         "provincia": "Sevilla",
         "direccion": ""
       },
-      "destacado": true,
-      "imagen": ""
+      "destacado": false,
+      "imagen": "/images/eventos/XXXI Alternativas_Sevilla.jpg",
+      "Web": "https://www.facebook.com/encuentrodealternativasdesevilla?locale=es_ES"
     },
     {
       "id": 3,
       "nombre": "Feria alternativa de Sevilla",
       "tipoEvento": "vegano ecológico",
-      "categoria": "Festival Vegano",
+      "categoria": "Festival Vegetariano Ecológico",
       "descripcion": "Encuentro de productos kilometro 0",
       "fechaInicio": "2026-04-17",
       "fechaFin": "2026-04-19",
@@ -111,15 +112,15 @@
         "provincia": "Sevilla",
         "direccion": "Parque del Alamillo"
       },
-      "destacado": true,
-      "imagen": "",
-      "web": ""
+      "destacado": false,
+      "imagen": "/images/eventos/XXXI Alternativas_Sevilla.jpg",
+      "Web": "https://www.facebook.com/encuentrodealternativasdesevilla?locale=es_ES"
     },
     {
       "id": 4,
       "nombre": "Biocultura",
       "tipoEvento": "Vegano ecológico",
-      "categoria": "Vegano o Gastronómico",
+      "categoria": "Festival Vegetariano Ecológico",
       "descripcion": "Feria de productos ecológicos y consumo responsable",
       "fechaInicio": "2026-05-07",
       "fechaFin": "2026-05-10",
@@ -131,7 +132,7 @@
         "provincia": "Barcelona",
         "direccion": "La Farga de L'Hospitalet"
       },
-      "destacado": true,
+      "destacado": false,
       "imagen": "/images/eventos/biocultura_BCN.jpg",
       "web": "https://www.biocultura.org/barcelona/informacion"
     },
@@ -139,34 +140,34 @@
       "id": 5,
       "nombre": "Feria alternativa de Valencia",
       "tipoEvento": "vegano ecológico",
-      "categoria": "Vegano o Gastronómico",
+      "categoria": "Festival Vegetariano Ecológico",
       "descripcion": "Encuentro de consumo responsable, ecológico y vegetariano. Charlas, musica, gastronomía y mas.",
       "fechaInicio": "2026-05-22",
       "fechaFin": "2026-05-24",
       "horaInicio": "10:00",
       "horaFin": "23:30",
       "ubicacion": {
-        "lugar": "Poligono de la Ciutadella",
+        "lugar": "En el viejo cauce del Turia. Entre los puentes de las Flores y la Exposición",
         "ciudad": "Valencia",
         "provincia": "Valencia",
-        "direccion": "Poligono de la Ciutadella, 16, L'Eixample, 46004 Valencia"
+        "direccion": "Recinto ferial del río Turia"
       },
-      "destacado": true,
-      "imagen": "",
-      "web": ""
+      "destacado": false,
+      "imagen": "/images/eventos/Fira-Alternativa-VLC.jpg",
+      "web": "https://firaalternativavalencia.com/"
     },
   {
     "id": 6,
     "nombre": "Bioterra",
-    "tipoEvento": "vegano",
-    "categoria": "Festival Vegano o Gastronómico",
+    "tipoEvento": "vegano ecológico",
+    "categoria": "Festival Vegetariano Ecológico",
     "descripcion": "Feria de productos ecológicos y consumo responsable",
     "confirmado": false,
     "fecha": "2026-06-06",
-    "fechaInicio": "2026-06-06",
-    "fechaFin": "2026-06-08",
+    "fechaInicio": "2026-06-05",
+    "fechaFin": "2026-06-07",
     "horaInicio": "10:00",
-    "horaFin": "23:30",
+    "horaFin": "23:00",
     "ubicacion": {
       "lugar": "FICOBA",
       "ciudad": "Irún",

@@ -163,7 +163,7 @@
     "categoria": "Festival Vegetariano Ecológico",
     "descripcion": "Feria de productos ecológicos y consumo responsable",
     "confirmado": false,
-    "fecha": "2026-06-06",
+    "fecha": "2026-06-05",
     "fechaInicio": "2026-06-05",
     "fechaFin": "2026-06-07",
     "horaInicio": "10:00",
@@ -184,30 +184,84 @@
   },
   {
     "id": 7,
-    "visible": false,
-    "nombre": "Festival de las Naciones",
-    "tipoEvento": "Vegano y General",
-    "categoria": "Festival Vegano y  Gastronómico",
-    "descripcion": "null",
+    "visible": true,
+    "nombre": "Festival de las Naciones - Logroño",
+    "tipoEvento": "Musical y gastronómico",
+    "categoria": "Festival",
+    "descripcion": "Evento cultural que aglutina arte, gastronomía y música de todos los países del mundo con un carácter solidario",
     "confirmado": false,
-    "fecha": null,
-    "fechaInicio": null,
-    "fechaFin": null,
-    "horaInicio": null,
-    "horaFin": null,
+    "fecha": "2026-04-21",
+    "fechaInicio": "2026-04-21",
+    "fechaFin": "2026-05-03",
+    "horaInicio": "10:00",
+    "horaFin": "23:00",
     "ubicacion": {
-      "lugar": "",
-      "ciudad": "Vitoria-Gasteiz",
-      "provincia": "Álava",
-      "direccion": "",
+      "lugar": "Paseo del Espolón",
+      "ciudad": "Logroño",
+      "provincia": "La Rioja",
+      "direccion": "Calle Miguel Villanueva 26001",
       "coordenadas": {
         "lat": null,
         "lng": null
       }
     },
     "destacado": false,
-    "imagen": "/images/eventos/null",
-    "web": ""
+    "imagen": "/images/eventos/festivalnaciones.jpg",
+    "web": "https://festivaldelasnaciones.es/"
+  },
+  {
+    "id": 8,
+    "visible": true,
+    "nombre": "Festival de las Naciones - Vitoria-Gasteiz",
+    "tipoEvento": "Musical y gastronómico",
+    "categoria": "Festival",
+    "descripcion": "Evento cultural que aglutina arte, gastronomía y música de todos los países del mundo con un carácter solidario",
+    "confirmado": false,
+    "fecha": "2026-06-26",
+    "fechaInicio": "2026-06-26",
+    "fechaFin": "2026-07-12",
+    "horaInicio": "10:00",
+    "horaFin": "23:00",
+    "ubicacion": {
+      "lugar": "Plaza de la Constitución",
+      "ciudad": "Vitoria-Gasteiz",
+      "provincia": "Álava - País Vasco",
+      "direccion": "Plaza de la Constitución Vitoria-Gasteiz, Álava",
+      "coordenadas": {
+        "lat": 42.85508991215886,
+        "lng": -2.679140016700112
+      }
+    },
+    "destacado": false,
+    "imagen": "/images/eventos/festivalnaciones.jpg",
+    "web": "https://festivaldelasnaciones.es/"
+  },
+  {
+    "id": 9,
+    "visible": true,
+    "nombre": "Festival de las Naciones - Santander",
+    "tipoEvento": "Musical y gastronómico",
+    "categoria": "Festival",
+    "descripcion": "Evento cultural que aglutina arte, gastronomía y música de todos los países del mundo con un carácter solidario",
+    "confirmado": false,
+    "fecha": "2026-08-10",
+    "fechaInicio": "2026-08-10",
+    "fechaFin": "2026-09-06",
+    "horaInicio": "10:00",
+    "horaFin": "23:00",
+    "ubicacion": {
+      "lugar": "Parking Público Playa del Sardinero",
+      "ciudad": "Santander",
+      "provincia": "Cantabria",
+      "direccion": "Av de la Reina Victoria, 131, 133, 39005 Santander, Cantabria",
+      "coordenadas": {
+        "lat": null,
+        "lng": null
+      }
+    },
+    "destacado": false,
+    "imagen": "/images/eventos/festivalnaciones.jpg",
+    "web": "https://festivaldelasnaciones.es/"
   }          
 
   ],

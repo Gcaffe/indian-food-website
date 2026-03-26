@@ -262,6 +262,33 @@
     "destacado": false,
     "imagen": "/images/eventos/festivalnaciones.jpg",
     "web": "https://festivaldelasnaciones.es/"
+  },
+  {
+    "id": 9,
+    "visible": true,
+    "nombre": "Festival de las Naciones - Almería",
+    "tipoEvento": "Musical y gastronómico",
+    "categoria": "Festival",
+    "descripcion": "Evento cultural que aglutina arte, gastronomía y música de todos los países del mundo con un carácter solidario",
+    "confirmado": false,
+    "fecha": "2026-09-25",
+    "fechaInicio": "2026-09-25",
+    "fechaFin": "2026-10-12",
+    "horaInicio": "10:00",
+    "horaFin": "23:00",
+    "ubicacion": {
+      "lugar": "Parque de las Almadrabillas",
+      "ciudad": "Almería",
+      "provincia": "Almería - Andalucia",
+      "direccion": "Calle Matadero, 3, 04007 Almería",
+      "coordenadas": {
+        "lat": null,
+        "lng": null
+      }
+    },
+    "destacado": false,
+    "imagen": "/images/eventos/festivalnaciones.jpg",
+    "web": "https://festivaldelasnaciones.es/"
   }          
 
   ],
